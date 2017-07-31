@@ -2,10 +2,14 @@
 # https://github.com/AlDanial/cloc
 
 
+
 #make a temporary directory and change into it.  
 #this is used to house the data without clogging up anything
 mkdir ./tempdir
 cd ./tempdir
+
+# create a ./data directory 
+mkdir ./data
 
 #list the repositories here.  you can list as many as you like.  
 #the repository that this code is based on is here for reference
