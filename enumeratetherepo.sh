@@ -37,10 +37,11 @@ mv thecount.txt ../.
 cd ..
 
 #rename the file based on date
-cat thecount.txt >> $(hostname)-$(date +"%Y%m%d-%H%M"-count).txt
+cat thecount.txt >> $(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt
 
 #copy the file to the proper directory
-cp $(hostname)-$(date +"%Y%m%d-%H%M"-count).txt ./data/traditional-$(hostname)-$(date +"%Y%m%d-%H%M"-count).txt
+#this will retain the folder of all valid data collected
+cp $(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt ./data/$(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt
 
 #clearn up old files
 rm thecount.txt
