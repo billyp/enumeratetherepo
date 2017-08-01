@@ -1,14 +1,13 @@
 #this code requires you to have cloc installed.
 # https://github.com/AlDanial/cloc
 
-
+#check to see if data directory exists.  if not, then create it
+[ ! -d ./data ] && mkdir -p ./data
 
 #make a temporary directory and change into it.  
 #this is used to house the data without clogging up anything
 mkdir ./tempdir
 cd ./tempdir
-
-[ ! -d ./super2 ] && mkdir -p ./super2
 
 #list the repositories here.  you can list as many as you like.  
 #the repository that this code is based on is here for reference
