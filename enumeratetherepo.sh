@@ -8,18 +8,7 @@
 mkdir ./tempdir
 cd ./tempdir
 
-#total = data
-# create a ./data directory 
-if [ -d ./tempdir ]
-then
-    echo "Directory exists  -------------------------- for super"
-fi
-
-
-#if [ -d ./data ]
-#then
-#    echo "Directory exists"
-#fi
+[ ! -d ./super2 ] && mkdir -p ./super2
 
 #list the repositories here.  you can list as many as you like.  
 #the repository that this code is based on is here for reference
