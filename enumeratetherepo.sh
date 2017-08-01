@@ -44,7 +44,7 @@ cat thecount.txt >> $(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt
 
 #copy the file to the proper directory
 #this will retain the folder of all valid data collected
-cp $(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt ./data/$(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt
+mv $(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt ./data/$(hostname -s)-$(date +"%Y%m%d-%H%M"-count).txt
 
 #clearn up old files
 rm thecount.txt
