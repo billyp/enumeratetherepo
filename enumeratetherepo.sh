@@ -11,7 +11,7 @@ cd ./tempdir
 
 #list the repositories here.  you can list as many as you like.  
 #the repository that this code is based on is here for reference
-git clone git@github.com:billyp/enumeratetherepo.git
+git clone git@github.com:billypoggi/enumeratetherepo.git
 
 
 #write the date the count was run
